@@ -24,18 +24,19 @@ Nao foi utilizado `std::stack`.
 
 ## Estrutura do projeto
 
-/
-├── .vscode/
-│   ├── launch.json
-│   └── tasks.json
-├── include/
-│   └── stack.h
-├── tests/
-│   └── tests.cpp
-├── .gitignore
-├── AGENTS.md
-├── README.md
-└── main.cpp
+O projeto esta organizado da seguinte forma:
+
+- `.vscode/`
+  - `launch.json`
+  - `tasks.json`
+- `include/`
+  - `stack.h`
+- `tests/`
+  - `tests.cpp`
+- `.gitignore`
+- `AGENTS.md`
+- `README.md`
+- `main.cpp`
 
 ## Como compilar e executar
 
@@ -51,21 +52,51 @@ mkdir -p build
 g++ tests/tests.cpp -Iinclude -o build/tests
 ./build/tests
 
-## Funcionamento do programa
+## Como compilar e executar
 
-O programa solicita ao usuario o numero de discos, que deve estar entre 1 e 10.
+### Programa principal
 
-Depois disso:
+No terminal, execute os comandos abaixo em sequencia:
 
-1. Inicializa as tres hastes como pilhas.
-2. Empilha todos os discos na haste A.
-3. Resolve o problema usando um algoritmo recursivo.
-4. A cada movimento, exibe:
-   - o disco movido;
-   - a haste de origem;
-   - a haste de destino;
-   - o estado atual das tres hastes.
-5. Ao final, exibe o total de movimentos realizados.
+1. Criar a pasta de compilacao:
+
+`mkdir -p build`
+
+2. Compilar o programa principal:
+
+`g++ main.cpp -Iinclude -o build/main`
+
+3. Executar o programa:
+
+`./build/main`
+
+No Windows, caso queira gerar executavel `.exe`, use:
+
+`g++ main.cpp -Iinclude -o build/main.exe`
+
+Depois execute:
+
+`./build/main.exe`
+
+### Testes
+
+No terminal, execute:
+
+1. Compilar os testes:
+
+`g++ tests/tests.cpp -Iinclude -o build/tests`
+
+2. Executar os testes:
+
+`./build/tests`
+
+No Windows, caso queira gerar executavel `.exe`, use:
+
+`g++ tests/tests.cpp -Iinclude -o build/tests.exe`
+
+Depois execute:
+
+`./build/tests.exe`
 
 ## Exemplo de saida
 
