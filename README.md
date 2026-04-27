@@ -42,20 +42,6 @@ O projeto esta organizado da seguinte forma:
 
 ### Programa principal
 
-mkdir -p build
-g++ main.cpp -Iinclude -o build/main
-./build/main
-
-### Testes
-
-mkdir -p build
-g++ tests/tests.cpp -Iinclude -o build/tests
-./build/tests
-
-## Como compilar e executar
-
-### Programa principal
-
 No terminal, execute os comandos abaixo em sequencia:
 
 1. Criar a pasta de compilacao:
